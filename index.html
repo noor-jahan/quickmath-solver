@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+
+    <meta http-equiv="Content-Language" content="en-us">
+
+    <title> Step-by-Step Math Problem Solver</title>
+
+    <meta name="description" content="QuickMath allows students to get instant solutions to all kinds of math problems, from algebra and equation solving right through to calculus and matrices."> <meta name="keywords" content="math,mathematics,tutoring,calculus,algebra,matrices,matrix,differentiate,integrate,inequalities,equations,solve,solving,factor,factoring,simplify,simplifying,expand,expanding,lessons,help,interactive,free,homework,kids,example,problem,solution,solving,review,web,general,educational,teaching,learning,instruction,school,automatic,instant,online,on-line,strategies,software,shareware,puzzles,games"> 
+
+    <link rel="preload" as="style" href="/css/r/main.css?v=1297851654">
+    <link rel="preload" as="script" href="/js/r/r.js?v=43356628">
+
+    <link rel="preload" as="font" href="/fonts/numbers.woff" crossorigin="anonymous" type="font/woff">
+    <link rel="preload" as="font" href="/fonts/web-kbd.woff" crossorigin="anonymous" type="font/woff">
+
+    <link rel="preload" as="font" href="/fonts/material-compact.ttf" crossorigin="anonymous" type="font/ttf">
+    <link rel="preload" as="font" href="/fonts/Ubuntu-Medium.woff" crossorigin="anonymous" type="font/woff">
+
+    <style>
+        @font-face{font-family:"Material Icons";src:url(/fonts/material-compact.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:"Ubuntu";src:url(/fonts/Ubuntu-Medium.woff) format("woff"),url(/fonts/Ubuntu-Medium.ttf) format("truetype");font-style:normal;font-weight:500}:link,:visited{color:#1a73e8;outline:0;text-decoration:none;font-family:Ubuntu,Verdana,Helvetica,sans-serif}body{font-family:Verdana,Helvetica,sans-serif;font-size:15px;background-color:#2a3f4e;background:linear-gradient(151.84deg,#355063 0,#152a3a 100%);background-image:url(/images/r/back.png)}body,dd,div,dl,figure,form,img,input,li,menu,table,td,th,tr,ul{padding:0;margin:0}table,td,th,tr{border:0}body>.page{background:#fff;margin:51px 51px 50px;width:95%;max-width:1200px;max-width:calc(min(1200px,1vw*100 - 102px));min-height:100vh}@media screen and (max-width:940px){body,body>.page{background:0 0}body>.page{margin:0;width:100%;max-width:unset}}.c-wrapper0{height:100%;display:flex;flex-direction:column}.c-wrapper{flex-grow:1;display:grid;grid-gap:0;grid-template-rows:1fr;grid-template-columns:231px 1fr}@media screen and (max-width:940px){#nav{display:none}.c-wrapper{display:block}}.page-content{max-width:100%;overflow-x:auto}@media screen and (max-width:940px){.page-content{padding:40px 10px 10px}#desktop-intro{display:none}}#page-content-header{height:80px;padding-left:24px;padding-right:24px;margin-bottom:20px;background:#fff;display:flex;align-items:center}#page-content-header .title{color:#8498ae;font-size:24px;font-family:Ubuntu;font-weight:700;line-height:28px}@media screen and (max-width:940px){#page-content-header{display:none}}.article{padding:24px}@media screen and (max-width:940px){.article{padding:10px 0}}#footer{max-width:1200px;max-width:calc(min(1200px,1vw*100 - 102px));display:flex}#footer-container{display:flex;margin:0 auto}#footer1,#footer2,#footer3{padding:20px 51px}#footer ul{overflow:hidden;position:relative;flex-direction:column}#footer ul li a{min-width:20%;line-height:30px;color:#fff;padding-left:22px;padding-right:22px}#footer h3{font-size:1.7em;line-height:1;font-family:Helvetica,Arial,freesans,sans-serif;color:#fff}@media screen and (max-width:940px){#footer{flex-direction:row;justify-content:center;max-width:100%;padding-bottom:50vh;padding-top:1em;background:#f0f0f0;border-top:1px solid #eee}#footer-container{flex-direction:column}#footer ul li a{padding-left:8px;color:#777}#footer h3{color:#1a1a1a;font-size:1.2em;margin:0}}#nav>.header>.ico-btn.close-ico,.header>.mob-header{display:none}@media screen and (max-width:940px){.page>.header{position:fixed;top:0;width:100%;transform:translate3d(0,0,0);z-index:1000}.page>.header>.mob-header{padding:0 5px;position:relative;height:48px;background:#282c2c;display:flex;align-items:center}.page>.header .mob-header .title{text-align:center;color:#fff;padding-left:8px;display:inline-block;flex-grow:1;white-space:nowrap;font:400 22px/32px Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif}.mob-header .ico-btn{color:#fff;padding:8px;margin-left:8px}}#nav{width:231px;background-color:#282c2c;color:#fff;overflow-x:hidden}#nav>.header{padding:20px 20px 0;height:60px;display:flex;flex-direction:row;align-items:center;background:#25292a}#nav>.header.with-ico{padding-left:8px}#nav>.header>.ico-btn.back-ico{display:inline-block;padding-bottom:10px;color:#fff}@media screen and (max-width:940px){#nav>.header{padding-left:8px;padding-bottom:20px;background:#033846}#nav>.header>.ico-btn.close-ico{display:inline-block;color:#fff}}.nav-list{list-style-type:none;padding:0}.nav-list li{display:block}.nav-title{color:#fff;display:flex;align-items:center;font-family:Ubuntu,"Helvetica Neue",sans-serif;font-weight:500;font-size:16px;user-select:none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;line-height:26px;padding:10px 0 10px 40px}.nav-divider{margin:15px 0;height:2px;background:#3e4243}.nav-item.with-ico>.nav-title{display:flex;align-items:center}.nav-item.with-ico>.nav-title>.ico-btn{padding-bottom:0!important}.nav-list.subnav-list{padding-left:0}.nav-list.subnav-list .nav-title,.subnav>.nav-list>.nav-item>.nav-title{padding-left:24px}.subnav>.nav-list>.nav-item>.nav-list>.nav-item>.nav-title{padding-left:50px}.subnav>.nav-list>.nav-item>.nav-list>.nav-item>.nav-title.nav-active{padding-left:44px}.nav-item.nav-expandable,.nav-toggle{cursor:pointer}.nav-toggle{color:#fff;display:inline-block;margin-right:4px;font:24px/1 "Material Icons";font-feature-settings:"liga";text-rendering:optimizeLegibility;text-transform:none}.nav-toggle::before{display:inline-block;width:24px;height:24px;content:"expand_less";transition:.2s transform ease-in-out}.nav-expandable[collapsed] .nav-toggle::before{transform:rotate(180deg)}.nav-expandable .nav-counter{flex-grow:1;text-align:right;padding-right:16px}.nav-expandable .nav-counter>span{display:inline-block;font-size:12px;border-radius:12px;border:2px solid #a7c4ec;width:19px;height:19px;line-height:19px;text-align:center}.nav-expandable>.nav-title{padding-left:12px;display:flex;align-items:center;background:#375783;background:#4975b1;background:0 0}.nav-expandable>.nav-list{background:#375783;background:#4975b1;background:#628ddc;background:0 0;max-width:100%;overflow-y:hidden;transition:height .2s;will-change:height}.nav-expandable[collapsed]>.nav-list{height:0}.nav-expandable>.nav-list .nav-title{padding-left:44px}@media screen and (max-width:940px){.nav-expandable>.nav-list,.nav-expandable>.nav-title{background:0 0}.nav-title>.nav-toggle{color:#000}}#top-subnav{height:56px;margin-bottom:16px}#footer ul,#top-subnav ul{list-style-type:none;display:flex}#top-subnav li{padding:10px 21px 5px 0}#top-subnav a{color:#b9bcc2;font-family:Helvetica Neue,Calibri,Corbel,Helvetica,Roboto,Droid,sans-serif;line-height:25px;font-size:18px;font-weight:500;padding:5px}#top-subnav li.active>a{color:#347cf9;border-bottom:2px solid #347cf9}#solver-tabs>ul{display:flex;list-style:none;margin-bottom:16px}#solver-tabs>ul>li{margin-right:30px}#solver-tabs>ul>li>a{color:#afafaf;font-size:18px;font-family:Ubuntu;font-weight:500}#solver-tabs>ul>li.active{border-bottom:4px solid #e3982e}#solver-tabs>ul>li.active a{color:#282c2c}#left-top-solver-btns,#right-top-solver-btns,#top-solver-btns{display:flex}#left-top-solver-btns{flex-grow:1}#top-solver-btns a,.clear-input-btn{display:flex;align-items:center;justify-content:center}.clear-input-btn{display:inline-flex}#top-solver-btns a>.ico,.clear-input-btn>.ico{display:inline-block;height:16px;width:16px}#top-solver-btns a>.btn-txt,.clear-input-btn>.btn-txt{line-height:1;padding:8px}#left-top-solver-btns a.clear-input,#left-top-solver-btns a.gen-sample,.clear-input-btn{border-radius:8px;color:#fff;width:118px;margin-right:16px}#left-top-solver-btns a.clear-input,.clear-input-btn{background:#d6924a}#left-top-solver-btns a.gen-sample{background:#71a8c8}#top-solver-btns a.gen-sample>.ico{background:url(/images/r/gen.svg) no-repeat top left}#top-solver-btns a.clear-input>.ico,.clear-input-btn>.ico{background:url(/images/r/new.svg) no-repeat top left}#top-solver-btns a.help-a>.ico{background:url(/images/r/help.svg) no-repeat top left}#top-solver-btns a.tutor>.ico{background:url(/images/r/tutor.svg) no-repeat top left}#right-top-solver-btns a{color:#afafaf}@media screen and (max-width:940px){#solver-tabs,#top-solver-btns{display:none}}.help-icon{height:35px;text-align:right}#rsolver{display:flex;align-items:start;white-space:nowrap}#rsolver-container,.article-inc,.steps-r,.txt-content{padding:15px;background:#fff;border-radius:5px;box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);margin-bottom:2em}.article-inc{margin-top:15em;max-width:calc(95% - 20px);overflow-x:hidden}.article-inc ul,.txt-content ul{padding-left:40px}.article-inc img,.txt-content img{max-width:95%}@media screen and (max-width:940px){#rsolver-container,.steps-r{box-shadow:none;border-radius:0;padding:0}}.dym-problem-input{clear:both;padding:5px 5px 5px 0;background:#fff;color:#666}body .calc__pre_result.mqeditable{height:255px;position:relative;margin-left:8px;margin-top:5px;padding:16px;border:1px solid #e2e2e2;background:#f5f5f5;border-radius:8px;color:#000}.mq-editable-field .mq-selectable,.mq-editable-field .mq-textarea *,.mq-math-mode .mq-selectable,.mq-math-mode .mq-textarea *{transform:scale(0);width:1px;height:1px}body .mobile-keyboard-hint{color:#afafaf;position:absolute;left:16px;top:16px}body table.kbd{background:0 0}body .help-section .onekey,body .kbd .onekey{color:#656565;border-radius:8px;border:0;background:#f7f5f4}body #help-page .onekey.doublekey.txt-btn,body .mobile-keyboard .doublekey.txt-btn,body .mobile-keyboard .onekey.doublekey.txt-btn{color:#fff;text-shadow:none;background:#71a8c8;border:0}body .mobile-keyboard .kbd .doublekey.txt-btn.key_go{background:#e3982e!important}body .kbd .onekey,body .mobile-keyboard .doublekey{box-shadow:6px 6px 14px #e0e0e0,-1px -1px 1px #ece7e7}body.pending .mobile-keyboard{display:none!important}@media screen and (max-width:940px){body .dym-problem-input{background:0 0}body .calc__pre_result.mqeditable{box-shadow:none;margin:0;border:0;background:#fff}}#navs-wrapper{display:flex;overflow-x:hidden;width:462px;transform:translate3d(-231px,0,0);transition:transform .2s cubic-bezier(.4,0,.2,1)}#navs-wrapper[display-top-nav]{transform:translate3d(0,0,0)}#top-nav,.subnav{width:231px}.subnav{display:none}.subnav[active]{display:block}.subnav-title{padding:20px 24px 8px 16px}.subnav-back-btn,.subnav-title>.title{color:#5d6464;font-family:Ubuntu,"Helvetica Neue",sans-serif;font-weight:500;font-size:16px}.subnav-back-btn{display:flex;align-items:center;color:#fff;padding-bottom:40px}.subnav-back-btn .ico-btn{color:#fff;display:inline-block;font-size:20px;font-weight:500;margin-right:0}.subnav-back-btn .ico-btn:hover{color:#fff}@media screen and (max-width:940px){body[ready] .subnav-back-btn .ico-btn::before{color:#000;width:auto;height:auto}body[ready] .subnav-back-btn,body[ready] .subnav-back-btn .ico-btn,body[ready] .subnav-back-btn .ico-btn:hover,body[ready] .subnav-back-btn:hover{color:#000}}.mob-banners{flex-grow:1;display:flex;justify-content:flex-end}.mob-banners>a~a{padding-left:16px}.dropdown-menu{display:none}            </style>
+
+
+
+</head>
+<body data-responsive="true" desktop-device="true" class="pending">
+    <div id="pg-main" class=" page">
+        <div class="header">
+            
+<div class="mob-header">
+
+    <span id="mob-header-back-btn">
+        <button type="button" id="drawer-menu" class="ico-btn drawer-menu"></button>
+    </span>
+
+    <span class="title">
+        QuickMath
+    </span>
+
+    <span class="mob-banners">
+        <a href="https://apps.apple.com/us/app/algebrator/id1478514827" target="_blank" rel="noopener" id="mob-app-store-a"><img src="images/r-mob_app_store.png" width="34" height="34" alt="Download on App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.softmath.algebrator&amp;referrer=utm_source%3Dquickmath" target="_blank" rel="noopener" id="mob-google-play-a"><img src="images/r-mob_google_play.png" width="34" height="34" alt="Download on Google Play"></a>
+    </span>
+
+
+    <span id="mob-header-help-btn">
+    </span>
+
+</div>
+
+
+        </div>
+
+
+        <div class="c-wrapper0">
+        <div class="c-wrapper">
+
+            
+<div id="nav" class="with-subnav">
+
+    <!-- mobile-nav-top: header of sidebar -->
+    <div class="header">
+        <button type="button" id="drawer-ico" class="ico-btn close-ico"></button>
+
+        <a href="quickmath.html" class="logo"><img src="images/r-dlogo.png" width="140" height="32"></a>
+    </div> <!-- mobile-nav-top -->
+
+
+    <div id="navs-wrapper" display-top-nav>
+<div id="top-nav">
+<ul class="nav-list nav-solver">
+
+    <li class="nav-item"><a href="basic.html" data-solver_type="solve" class="nav-title nav-active">Solve equations and<br> inequalities</a></li>
+
+    <li class="nav-item"><a href="basic.html" data-solver_type="simplify" class="nav-title ">Simplify expressions</a></li>
+
+    <li class="nav-item"><a href="basic.html" data-solver_type="factor" class="nav-title ">Factor polynomials</a></li>
+
+    <li class="nav-item"><a href="basic.html" data-solver_type="graph" class="nav-title ">Graph equations and inequalities</a></li>
+
+
+    <li class="nav-divider">&nbsp;</li>
+
+    <li class="nav-item with-ico subnav-a">
+        <a href="#advanced-solvers" class="nav-title ">
+            Advanced solvers
+            <span class="ico-btn forward-ico  "></span>
+        </a>
+    </li>
+
+    <li class="nav-item with-ico subnav-a">
+        <a href="#all-solvers" class="nav-title ">
+            All solvers
+            <span class="ico-btn forward-ico"></span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="math-tutorials.html" class="nav-title ">
+            Tutorials
+        </a>
+    </li>
+
+</ul> <!-- //nav-list -->
+</div> <!-- top-nav -->
+
+
+<div id="advanced-solvers" class="subnav">
+    
+
+    <div class="subnav-title">
+        <div><a href="#" class="subnav-back-btn">
+            <span class="ico-btn back-ico"></span>
+            <span>Back</span>
+        </a></div>
+        <div class="title">Advanced solvers</div>
+    </div>
+
+    <ul class="nav-list">
+
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Differentiate            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Integrate            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Partial Fractions            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Matrices            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Arithmetics</a></li>
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Inverse</a></li>
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Determinant</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Simplify            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Solve            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Factor            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="factor--basic.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Expand            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Graph            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Basic</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Advanced</a></li>
+                    </ul>
+    </li>
+
+    </ul> <!-- //nav-list -->
+
+</div> <!-- #sub-nav -->
+
+<div id="all-solvers" class="subnav">
+    
+
+    <div class="subnav-title">
+        <div><a href="#" class="subnav-back-btn">
+            <span class="ico-btn back-ico"></span>
+            <span>Back</span>
+        </a></div>
+        <div class="title">All solvers</div>
+    </div>
+
+    <ul class="nav-list">
+
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Arithmetics            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Percentages</a></li>
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Scientific Notation</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Expressions            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Simplify</a></li>
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Expand</a></li>
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Factor</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Equations            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Quadratics</a></li>
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Solve</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Graph</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Inequalities            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Solve</a></li>
+                            <li class="nav-item"><a href="advanced.html" class="nav-title ">Graph</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Fractions            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Reduce</a></li>
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Add</a></li>
+                    </ul>
+    </li>
+    <li class="nav-item nav-expandable" collapsed>
+        <div class="nav-title ">
+            Graph            <a class="nav-toggle" aria-hidden="true" href="quickmath.html"></a>
+        </div>
+        <ul class="nav-list subnav-list">
+                            <li class="nav-item"><a href="intermediate.html" class="nav-title ">Equations</a></li>
+                            <li class="nav-item"><a href="basic.html" class="nav-title ">Inequalities</a></li>
+                    </ul>
+    </li>
+
+    </ul> <!-- //nav-list -->
+
+</div> <!-- #all-solvers.subnav -->
+
+    </div> <!-- //navs-wrapper-->
+</div> <!-- //nav-->
+
+
+            <div class="page-content">
+                <div class="article-wrapper">
+
+                                <div id="page-content-header">
+                    <span class="title">Welcome to Quickmath Solvers!</span>
+
+                    <span class="mob-banners">
+                        <a href="https://apps.apple.com/us/app/algebrator/id1478514827" target="_blank" rel="noopener"><img src="images/r-app_store.png" width="122" height="42" alt="Download on App Store"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.softmath.algebrator&amp;referrer=utm_source%3Dquickmath" target="_blank" rel="noopener"><img src="images/r-google_play.png" width="139" height="42" alt="Download on Google Play"></a>
+                    </span>
+                </div> <!-- #page-content-header -->
+                
+                
+                    <div class="article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="solver-tabs">
+  <ul class="">
+      <li><a href="#form?v2=solve" data-solver_type="solve">Solve</a></li>
+      <li><a href="#form?v2=simplify" data-solver_type="simplify">Simplify</a></li>
+      <li><a href="#form?v2=factor" data-solver_type="factor">Factor</a></li>
+      <li><a href="#form?v2=expand" data-solver_type="expand">Expand</a></li>
+      <li><a href="#form?v2=graph" data-solver_type="graph">Graph</a></li>
+      <li><a href="#form?v2=gcf" data-solver_type="gcf">GCF</a></li>
+      <li><a href="#form?v2=lcm" data-solver_type="lcm">LCM</a></li>
+
+  </ul>
+</div>
+
+
+
+
+<div id="rsolver-container">
+
+    <div id="top-solver-btns">
+        <div id="left-top-solver-btns">
+            <a href="#" class="clear-input ripple dark"><i class="ico"></i><span class="btn-txt">New</span></a>
+            <a href="#" class="gen-sample ripple dark"><i class="ico"></i><span class="btn-txt">Example</span></a>
+        </div>
+
+        <div id="right-top-solver-btns">
+            <a href="solve.en.html" help="solve" class=" help-a" style="padding-right:10px" data-label="Help" visually-hidden aria-label="Help"><i class="ico"></i><span class="btn-txt">Help</span></a>
+            <a href="#" class="tutor" id="tutor-img" alt="Launch tutorial"><i class="ico"></i><span class="btn-txt">Tutorial</span></a>
+        </div>
+
+    </div><!--/#top-solver-btns -->
+
+
+
+<div id="rsolver">
+
+    <div style="width:100%;">
+
+        <div class="dym-problem-input">
+            <input type="hidden" name="solver_type" id="solver_type" value="solve">
+            <input type="hidden" name="variables" id="variables">
+            <input type="hidden" name="var1_solvepage" id="var1_solvepage">
+
+            <input type="hidden" id="arithmetics" name="arithmetics" value="integers">
+            <input type="hidden" id="steps_visibility" name="steps_visibility" value="3">
+
+
+            <div class="calc__pre_result mqeditable needsclick"><div class="mq" style="font-size: 100% ; box-shadow: none ; border: none ; " id="expression"></div><div class="mobile-keyboard-hint">Solve an equation, inequality or a system.<br><br>Example: 2x-1=y,2y+3=x</div></div>
+        </div>   <!--/.dym-problem-input-->
+    </div>
+
+
+</div> <!-- rsolver --> 
+
+<div id="kbdbig">
+    <div class="mobile-keyboard" id="kbd_solvepage"><table width="100%" align="center" cellspacing="2" cellpadding="0" border="0" class="kbd"><tbody><tr><td nowrap class="onekeytd"><button data-role="none" id="mk_1" class="onekey txt-btn ripple key_1"><span><span class="mathkbd-ch">1</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_2" class="onekey txt-btn ripple key_2"><span><span class="mathkbd-ch">2</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_3" class="onekey txt-btn ripple key_3"><span><span class="mathkbd-ch">3</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_4" class="onekey txt-btn ripple key_4"><span><span class="mathkbd-ch">4</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_5" class="onekey txt-btn ripple key_5"><span><span class="mathkbd-ch">5</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_6" class="onekey txt-btn ripple key_6"><span><span class="mathkbd-ch">6</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_7" class="onekey txt-btn ripple key_7"><span><span class="mathkbd-ch">7</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_8" class="onekey txt-btn ripple key_8"><span><span class="mathkbd-ch">8</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_9" class="onekey txt-btn ripple key_9"><span><span class="mathkbd-ch">9</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_10" class="onekey txt-btn ripple key_0"><span><span class="mathkbd-ch">0</span></span></button></td></tr><tr><td nowrap class="onekeytd"><button data-role="none" id="mk_11" class="onekey txt-btn ripple key_period"><span><span class="mathkbd-symbol">.</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_12" class="onekey txt-btn ripple key_comma"><span><span class="mathkbd-symbol">,</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_13" class="onekey txt-btn ripple key_lt"><span><span class="mathkbd-symbol">&lt;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_14" class="onekey txt-btn ripple key_gt"><span><span class="mathkbd-symbol">&gt;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_15" class="onekey txt-btn ripple key_lteq"><span><span class="mathkbd-symbol">&le;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_16" class="onekey txt-btn ripple key_gteq"><span><span class="mathkbd-symbol">&ge;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_17" class="onekey txt-btn ripple key_power"><span><span class="mathkbd-symbol">^</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_18" class="onekey txt-btn ripple key_sqrt"><span><span class="mathkbd-symbol">&radic;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_19" class="onekey txt-btn ripple key_left notooltip onekey doublekey"><span><span class="mathkbd-symbol">&#11013;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_20" class="onekey txt-btn ripple key_right notooltip onekey doublekey"><span><span class="mathkbd-symbol">&#10145;</span></span></button></td></tr><tr><td nowrap colspan="2"><button data-role="none" id="mk_21" class="doublekey txt-btn ripple key_fx notooltip notooltip"><span><span class="mathkbd-symbol">F</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_22" class="onekey txt-btn ripple key_sub"><span><span class="mathkbd-symbol">_</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_23" class="onekey txt-btn ripple key_div"><span><span class="mathkbd-symbol">&divide;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_24" class="onekey txt-btn ripple key_abs"><span><span class="mathkbd-symbol">|</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_25" class="onekey txt-btn ripple key_par"><span><span class="mathkbd-symbol">(</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_26" class="onekey txt-btn ripple key_mult"><span><span class="mathkbd-symbol">*</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_27" class="onekey txt-btn ripple key_livediv"><span><span class="mathkbd-symbol">/</span></span></button></td><td nowrap colspan="2"><button data-role="none" id="mk_28" class="doublekey txt-btn ripple key_del notooltip"><span><span class="mathkbd-symbol">&#9003;</span></span></button></td></tr><tr><td nowrap colspan="2"><button data-role="none" id="mk_29" class="doublekey txt-btn ripple key_var notooltip"><span><span class="mathkbd-symbol">A</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_30" class="onekey txt-btn ripple key_last"><span><span class="mathkbd-symbol">&#8635;</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_31" class="onekey txt-btn ripple key_x"><span><span class="mathkbd-ch">x</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_32" class="onekey txt-btn ripple key_y"><span><span class="mathkbd-ch">y</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_33" class="onekey txt-btn ripple key_eq"><span><span class="mathkbd-symbol">=</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_34" class="onekey txt-btn ripple key_plus"><span><span class="mathkbd-symbol">+</span></span></button></td><td nowrap class="onekeytd"><button data-role="none" id="mk_35" class="onekey txt-btn ripple key_minus"><span><span class="mathkbd-symbol">-</span></span></button></td><td nowrap colspan="2"><button data-role="none" id="mk_36" class="doublekey txt-btn ripple key_go go_key_td doublekey notooltip"><span><span class="mathkbd-symbol go_key">G</span></span></button></td></tr></tbody></table></div>
+</div>
+
+</div> <!-- /.rsolver-container -->
+
+
+<div>
+    <div class="calc__error" id="error2_solvepage"></div>
+
+    <div class="solver_result text_result" id="result_html_solvepage"><div class="scroller"></div> </div>
+</div>
+
+
+
+<!--
+<div class="remodal" data-remodal-id="modal_msg"  id="modal_msg" role="dialog" style="max-width: 400px ; top: 600px" data-remodal-options="hashTracking: false, modifier: solvefor" >
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <div>
+        <h3 id="modalMsgTitle"></h3>
+        <div id="modal_msg_div"></div>
+    </div>
+    <br />
+    <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+</div>
+-->
+
+
+
+<!-- end --> 
+
+
+
+
+
+
+
+
+
+<div class="article-inc" id="explanation-txt">
+<h4>What can QuickMath do?</h4>
+<p>QuickMath will automatically answer the most common problems in algebra, equations and calculus faced by high-school and college students.</p>
+
+<ul>
+    <li class="sitepageli">
+    <div>The <a href="index.html">algebra</a> section allows you to expand, factor or simplify virtually any expression you choose.
+    It also has commands for splitting fractions into partial fractions, combining several fractions into one and cancelling common factors within a fraction.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="index.html">equations</a> section lets you solve an equation or system of equations.
+    You can usually find the exact answer or, if necessary, a numerical answer to almost any accuracy you require.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="index.html">inequalities</a> section lets you solve an inequality
+    or a system of inequalities for a single variable. You can also plot inequalities in two variables.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="index.html">calculus</a> section will carry out differentiation as well as definite and indefinite integration.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="index.html">matrices</a> section contains commands for the arithmetic manipulation of matrices.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="#">graphs</a> section contains commands for plotting equations and inequalities.<br>
+    </div>
+    </li>
+
+    <li class="sitepageli">
+    <div>The <a href="#">numbers</a> section has a percentages command for explaining the most common types of percentage problems and a section for dealing with scientific notation.</div>
+    </li>
+
+</ul>
+    </div>
+
+
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["MathSolver","LearningResource"],"name":"QuickMath","url":"https://quickmath.com/","usageInfo":"https://quickmath.com/pages/privacy/privacy.php","inLanguage":"en","potentialAction":[{"@type":"SolveMathAction","target":"https://quickmath.com/solve/gsolve.php?q={math_expression_string}","mathExpression-input":"required name=math_expression_string","eduQuestionType":["Absolute Value Equation","Algebra","Arithmetic","Biquadratic Equation","Exponential Equation","Linear Equation","Linear Inequality","Logarithmic Equation","Logarithmic Inequality","Polynomial Equation","Polynomial Expression","Polynomial Inequality","Quadratic Equation","Quadratic Expression","Quadratic Inequality","Radical Equation","Radical Inequality","Rational Equation","Rational Expression","Rational Inequality"]}],"learningResourceType":"Math solver"}
+</script>
+
+
+
+
+
+                </div> <!-- //article -->
+
+                </div> <!-- //article-wrapper -->
+
+
+            </div> <!-- /.page-content -->
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div id="footer">
+        <div id="footer-container">
+        <div id="footer1">
+            <h3>QuickMath</h3>
+            <ul class="list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="help.html">Help</a></li>
+            </ul>
+            </div>
+
+
+        <div id="footer2">
+            <h3>Math Topics</h3>
+            <ul class="list">
+            <li><a href="index.html">Equations </a></li>
+            <li><a href="index.html">Inequalities</a></li>
+            <li><a href="graphs.html">Graphs </a></li>
+            <li><a href="index.html">Calculus </a></li>
+            <li><a href="index.html">Matrices </a></li>
+            <li><a href="index.html">Algebra</a></li>
+            </ul>
+        </div>
+        <div id="footer3">
+            <h3>More Solvers</h3>
+            <ul class="list">
+            <li><a href="advanced.html">Simplify expressions</a></li>
+            <li><a href="intermediate.html">Add Fractions</a></li>
+            <li><a href="advanced.html">Simplify Fractions</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-256620-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>  
+</script>
+
+
+
+<noscript id="deferred-styles">
+<link rel="stylesheet" type="text/css" href="css/r-main.css">
+<link rel="stylesheet" type="text/css" href="css/r-solver-main.css">
+
+</noscript>
+<script>var loadDeferredStyles=function(){var b=document.getElementById("deferred-styles");var a=document.createElement("div");a.innerHTML=b.textContent;document.body.appendChild(a);b.parentElement.removeChild(b)};var raf=0;if("undefined"!=typeof(requestAnimationFrame)){raf=requestAnimationFrame}else{if("undefined"!=typeof(mozRequestAnimationFrame)){raf=mozRequestAnimationFrame}else{if("undefined"!=typeof(webkitRequestAnimationFrame)){raf=webkitRequestAnimationFrame}else{if("undefined"!=typeof(msRequestAnimationFrame)){raf=msRequestAnimationFrame}}}}if(raf){raf(function(){window.setTimeout(loadDeferredStyles,0)})}else{window.addEventListener("load",loadDeferredStyles)};
+</script>
+
+
+<script type="text/javascript">
+function loadJS(d,a){var c=document.createElement("script");c.src=d;var e=document.getElementsByTagName("head")[0],b=false;c.onload=c.onreadystatechange=function(){if(!b&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){b=true;if(a&&typeof(a)==="function"){a()}c.onload=c.onreadystatechange=null;if(e&&c.parentNode){e.removeChild(c)}}};e.appendChild(c)};
+loadJS( "/js/r/r.js?v=43356628", function() {loadJS( "/r-solver/main.js?v=20230602141351", function() {loadJS( "/r-solver/js1.js?v=20230602141351", function() {
+if ( "undefined" != typeof( on_js_load ) && typeof(on_js_load) === "object" && $.isArray( on_js_load ) ) {
+    for ( var i in on_js_load ) {
+        if ( "function" === typeof( on_js_load[ i ] ) ) {
+            on_js_load[ i ]() ;
+        }
+    }
+}
+} )} )} )</script>
+
+</body>
+</html>
